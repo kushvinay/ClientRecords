@@ -17,17 +17,6 @@ export const mergeRecords = (existingRecords, newRecords) => {
     ];
     return merged;
 };
-
-// export const searchRecords = (records, searchTerm) => {
-//     if (!searchTerm) return records;
-//     return records.filter(
-//         (record) =>
-//             record.id.includes(searchTerm) ||
-//             record.name.includes(searchTerm) ||
-//             record.email.includes(searchTerm),
-//     );
-// };
-
 export const searchRecords = (records, searchTerm) => {
     if (!searchTerm) return records;
     return records.filter((record) =>
